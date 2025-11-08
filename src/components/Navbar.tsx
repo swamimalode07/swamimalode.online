@@ -55,12 +55,12 @@ const Navbar: React.FC = () => {
               >
                 Projects
               </button>
-              {/* <button
+              <button
                 className="font-space-grotesk-300 font-sans font-medium text-white transition-colors hover:text-gray-300"
-                onClick={() => router.push("/art")}
+                onClick={() => router.push("/artgallery")}
               >
-                Art
-              </button> */}
+                Art Gallery
+              </button>
             </div>
 
             <button
