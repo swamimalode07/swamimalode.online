@@ -39,9 +39,9 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose }) => {
       category: "Pages",
     },
     {
-      id: "art",
-      title: "Art",
-      description: "Browse my components",
+      id: "artgallery",
+      title: "Art Gallery",
+      description: "Animated coding components",
       icon: Palette,
       category: "Pages",
     },
@@ -121,9 +121,16 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose }) => {
   }, [selectedIndex]);
 
   const handleSelectItem = (section: Section): void => {
-    router.push(`/${section.id}`);
+  if (section.id === "artgallery") {
+    router.push("/artgallery");
     onClose();
-  };
+    return;
+  }
+
+  router.push(`/${section.id}`);
+  onClose();
+};
+
 
   if (!isOpen) return null;
 
