@@ -117,7 +117,7 @@ const ArtGallery = () => {
       id: 1,
       videoUrl: "video/foldercomponent.mp4",
       liveUrl: "https://swamimalode.online/artgallery/foldercomponent",
-      twitterUrl: "https://x.com/swamimalode",
+      twitterUrl: "https://x.com/SwamiMalode/status/1987369556470341668?s=20",
     },
   ];
     const router= useRouter()
