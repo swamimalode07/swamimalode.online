@@ -4,6 +4,7 @@ import { FileDown, Calendar } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import RingButton from "./RingButton";
+import OpenToWorkNote from "./OpenToWorkNote";
 
 const HeroSection = () => {
   return (
@@ -37,6 +38,7 @@ const HeroSection = () => {
               <a href="https://cal.com/swamimalode" target="_blank" rel="noopener noreferrer">
                 <RingButton text="Book a Meeting" icon={Calendar} />
               </a>
+              <OpenToWorkNote />
             </div>
           </div>
         </div>
